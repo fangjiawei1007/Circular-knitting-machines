@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<TKStudioProject Name="s3c2416_bios.mcp" BuildTool="13" Version="3.00" Author="YinHandong[Òüº®¶¬]" ToolVer="default" ProjectGUID="{9A9D445F-A6AB-4a6d-A1FB-237250074C8A}">
+    <Configurations>
+        <Configuration VENDOR="Actel" FAMINY="3" CPU="CPU=CLOCK(60000000) CPUTYPE(ARM7TDMI) EBIG" SIMDL='SIM=SARM.DLL(&quot;&quot;)  DARMO.DLL(&quot;&quot;)' SIMCLK="60.000000" Name="ver64m_bin" ADS_CParam='$(ADS_PARAM) -c &quot;$(SOURCE)&quot; -o &quot;$(OBJ)&quot;' ADS_AsmParam='$(ADS_PARAM) &quot;$(SOURCE)&quot; &quot;$(OBJ)&quot;' ADS_LinkParam='$(OBJS) $(ADS_LNKPARAM) -o &quot;$(ELF)&quot;' ADS_OPTDBG='1,RDI 0,1,0,1,0,(&quot;&quot;)' ADS_USRAPPFILE="" SearchPath=' -I&quot;.*&quot;  -J&quot;{Compiler}include&quot;  -J&quot;{Compiler}lib&quot; ' ADS_LNKPARAM=" -entry __ENTRY -ro-base 0x30000000 -first start.o(SelfBoot) -info totals" ADS_FileMap="(.c&amp;&amp;.h@armcc),(.cc&amp;&amp;.cpp&amp;&amp;.hpp@armcpp),(.s@armasm)" ADS_LinkerName="ARM Linker" ADS_OUTPUT_DIR="{Project}" ADS_PostLnk="ARM fromELF" ADS_FromELFParam=' -bin -output &quot;s3c2416_bios.bin&quot;' ADS_GArmAsmParam=' -cpu ARM926EJ-S -fpu None -keep -g -PD &quot;SDRAM_COL_BIT SETA 1&quot; -PD &quot;SDRAM_END SETA 0x34000000&quot;' ADS_GArmCCParam=" -cpu ARM926EJ-S -D__TARGET_ARCH_5TE -D__TARGET_FEATURE_DSPMUL -DSDRAM_SIZE64M -D__TARGET_CPU_ARM7TDMI= -D__TARGET_CPU_ARM926EJ_S -D__OPTIMISE_LEVEL==0 -D__TARGET_FEATURE_DOUBLEWORD -D__TARGET_ARCH_4T=  -g+ -O0" ADS_GArmCppParam=" -cpu ARM926EJ-S -D__TARGET_ARCH_5TE -D__TARGET_FEATURE_DSPMUL -D__TARGET_CPU_ARM7TDMI= -D__TARGET_CPU_ARM926EJ_S -D__TARGET_FEATURE_DOUBLEWORD -D__TARGET_ARCH_4T=  -g+ -O1" ADS_GThmCCParam=" -cpu ARM926EJ-S -D__TARGET_ARCH_5TE -D__TARGET_FEATURE_DSPMUL -D__TARGET_CPU_ARM7TDMI= -D__TARGET_CPU_ARM926EJ_S -D__TARGET_FEATURE_DOUBLEWORD -D__TARGET_ARCH_4T=  -g+ -O1" ADS_GThmCppParam=" -cpu ARM926EJ-S -D__TARGET_ARCH_5TE -D__TARGET_FEATURE_DSPMUL -D__TARGET_CPU_ARM7TDMI= -D__TARGET_CPU_ARM926EJ_S -D__TARGET_FEATURE_DOUBLEWORD -D__TARGET_ARCH_4T=  -g+ -O1" UpdateTgtBeforeDbg="1" ServeDebugOptions="" InitScriptForSim="" InitScriptForEmu="" OPTDBG='1,-1,1,0,1,0,(&quot;&quot;)' DEVICE="COREMP7" AppFile=".\ver64m_bin\s3c2416_bios.mcp.axf" ADS_BatchFileParam="0,()" ADS_ReBuild="1">
+            <DeviceProperties Item0='BOOK1=DATASHTS\ACTEL\COREMP7_UG.PDF(&quot;Actel User Guide&quot;)' Item1='BOOK0=DATASHTS\ACTEL\COREMP7_DS.PDF(&quot;Actel Data Sheet&quot;)' Item2='BOOK2=DATASHTS\ARM\DDI0234.PDF\(&quot;ARM7TDMI-S Technical Reference Manual&quot;)' Item3="CPU=CLOCK(60000000) CPUTYPE(ARM7TDMI) EBIG" Item4='MON=SARM.DLL(&quot;&quot;) TARMO.DLL(&quot;&quot;)' Item5='SIM=SARM.DLL(&quot;&quot;)  DARMO.DLL(&quot;&quot;)' />
+            <DeviceDescription Description="The CoreMP7 is fully compatible with the ARM7TDMI-S 32-bit processor from ARM.&#x0D;&#x0A;The CoreMP7 is supplied with an MP7Bridge for interfacing to an  Advanced High-Performance Bus (AHB) based bus system.&#x0D;&#x0A;The ARM7TMDI-S core is an 32/16 bit RISC  architecture, based on 32-bit ARMv4T instruction set, and 16-bit Thumb instruction set.&#x0D;&#x0A;It incudes an 32-bit ALU, 3-stage pipeline, a 32-bit external bus interface and an embedded real-time debug and JTAG interface.&#x0D;&#x0A;This core is optimized for Actel flash-based M7 devices and implemented fully in the fabric." />
+        </Configuration>
+        <Configuration VENDOR="Actel" FAMINY="3" CPU="CPU=CLOCK(60000000) CPUTYPE(ARM7TDMI) EBIG" SIMDL='SIM=SARM.DLL(&quot;&quot;)  DARMO.DLL(&quot;&quot;)' SIMCLK="24.000000" Name="ver64m_hex" ADS_CParam='$(ADS_PARAM) -c &quot;$(SOURCE)&quot; -o &quot;$(OBJ)&quot;' ADS_AsmParam='$(ADS_PARAM) &quot;$(SOURCE)&quot; &quot;$(OBJ)&quot;' ADS_LinkParam='$(OBJS) $(ADS_LNKPARAM) -o &quot;$(ELF)&quot;' ADS_OPTDBG='1,RDI 0,1,0,1,0,(&quot;&quot;)' ADS_USRAPPFILE="" SearchPath=' -I&quot;.*&quot;  -J&quot;{Compiler}include&quot;  -J&quot;{Compiler}lib&quot; ' ADS_LNKPARAM=" -entry __ENTRY -ro-base 0x30100000 -first start.o(SelfBoot) -info totals" ADS_FileMap="(.c&amp;&amp;.h@armcc),(.cc&amp;&amp;.cpp&amp;&amp;.hpp@armcpp),(.s@armasm)" ADS_LinkerName="ARM Linker" ADS_OUTPUT_DIR="{Project}" ADS_PostLnk="ARM fromELF" ADS_FromELFParam=' -i32 -output &quot;S3C2410_BIOS.hex&quot;' ADS_GArmAsmParam=' -cpu ARM920T -fpu None -g -keep -PD &quot;SDRAM_END SETA 0x34000000&quot;' ADS_GArmCCParam=" -cpu ARM920T -DSDRAM_SIZE64M -D__TARGET_CPU_ARM7TDMI= -D__TARGET_CPU_ARM920T  -g+ -O2" ADS_GArmCppParam=" -cpu ARM920T -D__TARGET_CPU_ARM7TDMI= -D__TARGET_CPU_ARM920T  -g+ -O1" ADS_GThmCCParam=" -cpu ARM920T -D__TARGET_CPU_ARM7TDMI= -D__TARGET_CPU_ARM920T  -g+ -O1" ADS_GThmCppParam=" -cpu ARM920T -D__TARGET_CPU_ARM7TDMI= -D__TARGET_CPU_ARM920T  -g+ -O1" UpdateTgtBeforeDbg="1" ServeDebugOptions="" InitScriptForSim="" InitScriptForEmu="" AppFile="" ADS_BatchFileParam="" DEVICE="COREMP7" />
+    </Configurations>
+    <Files>
+        <Filter Name="INC">
+            <File RelativePath=".\inc\2416addr.h" FileType="4" />
+            <File RelativePath=".\inc\2416lib.h" FileType="4" />
+            <File RelativePath=".\inc\2416slib.h" FileType="4" />
+            <File RelativePath=".\inc\alarm.h" FileType="4" />
+            <File RelativePath=".\inc\def.h" FileType="4" />
+            <File RelativePath=".\inc\DMAAdmin.h" FileType="4" />
+            <File RelativePath=".\inc\download.h" FileType="4" />
+            <File RelativePath=".\inc\encrypt.h" FileType="4" />
+            <File RelativePath=".\inc\function.h" FileType="4" />
+            <File RelativePath=".\inc\image_cfg.h" FileType="4" />
+            <File RelativePath=".\inc\jiema.h" FileType="4" />
+            <File RelativePath=".\inc\kxarm.h" FileType="4" />
+            <File RelativePath=".\inc\LCD.h" FileType="4" />
+            <File RelativePath=".\inc\mmu.h" FileType="4" />
+            <File RelativePath=".\inc\nand.h" FileType="4" />
+            <File RelativePath=".\inc\Option.h" FileType="4" />
+            <File RelativePath=".\inc\rtcapi.h" FileType="4" />
+            <File RelativePath=".\inc\systemconf.h" FileType="4" />
+            <File RelativePath=".\inc\systemmenu.h" FileType="4" />
+            <File RelativePath=".\inc\bmp.h" FileType="4" />
+            <File RelativePath=".\inc\communication.h" FileType="4" />
+            <File RelativePath=".\inc\test.h" FileType="4" />
+            <File RelativePath=".\inc\rtc.h" FileType="4" />
+        </Filter>
+        <File RelativePath=".\SRC\2416lib.c" FileType="1" Output="2416lib.o">
+            <ADS_CParam Name="ADS_CfgFlag" ver64m_bin=" -cpu ARM926EJ-S -D__TARGET_ARCH_5TE -D__TARGET_FEATURE_DSPMUL -DSDRAM_SIZE64M -D__TARGET_CPU_ARM7TDMI= -D__TARGET_CPU_ARM926EJ_S -D__OPTIMISE_LEVEL==0 -D__TARGET_FEATURE_DOUBLEWORD -D__TARGET_ARCH_4T=  -g+ -O0" ver64m_bin_tool="2" ver64m_hex=" -cpu ARM920T -DSDRAM_SIZE64M -D__TARGET_CPU_ARM7TDMI= -D__TARGET_CPU_ARM920T  -g+ -O2" ver64m_hex_tool="2" />
+            <Header RelativePath=".\inc\2416addr.h" />
+            <Header RelativePath=".\inc\2416lib.h" />
+            <Header RelativePath=".\inc\2416slib.h" />
+            <Header RelativePath=".\inc\Def.h" />
+            <Header RelativePath=".\inc\def.h" />
+            <Header RelativePath=".\inc\lcd.h" />
+            <Header RelativePath=".\inc\option.h" />
+            <Header RelativePath=".\inc\systemconf.h" />
+        </File>
+        <File RelativePath=".\SRC\2416slib.s" FileType="2" Output="2416slib.o">
+            <ADS_AsmParam Name="ADS_CfgFlag" ver64m_bin=' -cpu ARM926EJ-S -fpu None -keep -g -PD &quot;SDRAM_COL_BIT SETA 1&quot; -PD &quot;SDRAM_END SETA 0x34000000&quot;' ver64m_bin_tool="1" ver64m_hex=' -cpu ARM920T -fpu None -g -keep -PD &quot;SDRAM_END SETA 0x34000000&quot;' ver64m_hex_tool="1" />
+        </File>
+        <File RelativePath=".\SRC\download.c" FileType="1" Output="download.o">
+            <ADS_CParam Name="ADS_CfgFlag" ver64m_bin=" -cpu ARM926EJ-S -D__TARGET_ARCH_5TE -D__TARGET_FEATURE_DSPMUL -DSDRAM_SIZE64M -D__TARGET_CPU_ARM7TDMI= -D__TARGET_CPU_ARM926EJ_S -D__OPTIMISE_LEVEL==0 -D__TARGET_FEATURE_DOUBLEWORD -D__TARGET_ARCH_4T=  -g+ -O0" ver64m_bin_tool="2" ver64m_hex=" -cpu ARM920T -DSDRAM_SIZE64M -D__TARGET_CPU_ARM7TDMI= -D__TARGET_CPU_ARM920T  -g+ -O2" ver64m_hex_tool="2" />
+            <Header RelativePath=".\inc\2416addr.h" />
+            <Header RelativePath=".\inc\2416lib.h" />
+            <Header RelativePath=".\inc\Def.h" />
+            <Header RelativePath=".\inc\LCD.h" />
+            <Header RelativePath=".\inc\def.h" />
+            <Header RelativePath=".\inc\download.h" />
+            <Header RelativePath=".\inc\nand.h" />
+            <Header RelativePath=".\inc\option.h" />
+            <Header RelativePath=".\inc\systemconf.h" />
+            <Header RelativePath=".\inc\systemmenu.h" />
+            <Header RelativePath=".\inc\usbdev.h" />
+        </File>
+        <File RelativePath=".\SRC\end.s" FileType="2" Output="end.o">
+            <ADS_AsmParam Name="ADS_CfgFlag" ver64m_bin=' -cpu ARM926EJ-S -fpu None -keep -g -PD &quot;SDRAM_COL_BIT SETA 1&quot; -PD &quot;SDRAM_END SETA 0x34000000&quot;' ver64m_bin_tool="1" ver64m_hex=' -cpu ARM920T -fpu None -g -keep -PD &quot;SDRAM_END SETA 0x34000000&quot;' ver64m_hex_tool="1" />
+        </File>
+        <File RelativePath=".\SRC\function.c" FileType="1" Output="function.o">
+            <ADS_CParam Name="ADS_CfgFlag" ver64m_bin=" -cpu ARM926EJ-S -D__TARGET_ARCH_5TE -D__TARGET_FEATURE_DSPMUL -DSDRAM_SIZE64M -D__TARGET_CPU_ARM7TDMI= -D__TARGET_CPU_ARM926EJ_S -D__OPTIMISE_LEVEL==0 -D__TARGET_FEATURE_DOUBLEWORD -D__TARGET_ARCH_4T=  -g+ -O0" ver64m_bin_tool="2" ver64m_hex=" -cpu ARM920T -DSDRAM_SIZE64M -D__TARGET_CPU_ARM7TDMI= -D__TARGET_CPU_ARM920T  -g+ -O2" ver64m_hex_tool="2" />
+            <Header RelativePath=".\inc\2416addr.h" />
+            <Header RelativePath=".\inc\2416lib.h" />
+            <Header RelativePath=".\inc\Def.h" />
+            <Header RelativePath=".\inc\Function.h" />
+            <Header RelativePath=".\inc\Rtc.h" />
+            <Header RelativePath=".\inc\app.h" />
+            <Header RelativePath=".\inc\communication.h" />
+            <Header RelativePath=".\inc\def.h" />
+            <Header RelativePath=".\inc\download.h" />
+            <Header RelativePath=".\inc\jiema.h" />
+            <Header RelativePath=".\inc\lcd.h" />
+            <Header RelativePath=".\inc\option.h" />
+            <Header RelativePath=".\inc\systemconf.h" />
+            <Header RelativePath=".\inc\systemmenu.h" />
+            <Header RelativePath=".\inc\test.h" />
+        </File>
+        <File RelativePath=".\SRC\jiema.c" FileType="1" Output="jiema.o">
+            <ADS_CParam Name="ADS_CfgFlag" ver64m_bin=" -cpu ARM926EJ-S -D__TARGET_ARCH_5TE -D__TARGET_FEATURE_DSPMUL -DSDRAM_SIZE64M -D__TARGET_CPU_ARM7TDMI= -D__TARGET_CPU_ARM926EJ_S -D__OPTIMISE_LEVEL==0 -D__TARGET_FEATURE_DOUBLEWORD -D__TARGET_ARCH_4T=  -g+ -O0" ver64m_bin_tool="2" ver64m_hex=" -cpu ARM920T -DSDRAM_SIZE64M -D__TARGET_CPU_ARM7TDMI= -D__TARGET_CPU_ARM920T  -g+ -O2" ver64m_hex_tool="2" />
+            <Header RelativePath=".\inc\2416addr.h" />
+            <Header RelativePath=".\inc\Def.h" />
+            <Header RelativePath=".\inc\bmp.h" />
+            <Header RelativePath=".\inc\communication.h" />
+            <Header RelativePath=".\inc\def.h" />
+            <Header RelativePath=".\inc\jiema.h" />
+            <Header RelativePath=".\inc\lcd.h" />
+            <Header RelativePath=".\inc\nand.h" />
+            <Header RelativePath=".\inc\option.h" />
+            <Header RelativePath=".\inc\systemconf.h" />
+        </File>
+        <File RelativePath=".\SRC\LCD.c" FileType="1" Output="LCD.o">
+            <ADS_CParam Name="ADS_CfgFlag" ver64m_bin=" -cpu ARM926EJ-S -D__TARGET_ARCH_5TE -D__TARGET_FEATURE_DSPMUL -DSDRAM_SIZE64M -D__TARGET_CPU_ARM7TDMI= -D__TARGET_CPU_ARM926EJ_S -D__OPTIMISE_LEVEL==0 -D__TARGET_FEATURE_DOUBLEWORD -D__TARGET_ARCH_4T=  -g+ -O0" ver64m_bin_tool="2" ver64m_hex=" -cpu ARM920T -DSDRAM_SIZE64M -D__TARGET_CPU_ARM7TDMI= -D__TARGET_CPU_ARM920T  -g+ -O2" ver64m_hex_tool="2" />
+            <Header RelativePath=".\inc\2416addr.h" />
+            <Header RelativePath=".\inc\Def.h" />
+            <Header RelativePath=".\inc\LCD.h" />
+            <Header RelativePath=".\inc\option.h" />
+        </File>
+        <File RelativePath=".\SRC\main.c" FileType="1" Output="main.o">
+            <ADS_CParam Name="ADS_CfgFlag" ver64m_bin=" -cpu ARM926EJ-S -D__TARGET_ARCH_5TE -D__TARGET_FEATURE_DSPMUL -DSDRAM_SIZE64M -D__TARGET_CPU_ARM7TDMI= -D__TARGET_CPU_ARM926EJ_S -D__OPTIMISE_LEVEL==0 -D__TARGET_FEATURE_DOUBLEWORD -D__TARGET_ARCH_4T=  -g+ -O0" ver64m_bin_tool="2" ver64m_hex=" -cpu ARM920T -DSDRAM_SIZE64M -D__TARGET_CPU_ARM7TDMI= -D__TARGET_CPU_ARM920T  -g+ -O2" ver64m_hex_tool="2" />
+            <Header RelativePath=".\inc\2416addr.h" />
+            <Header RelativePath=".\inc\2416lib.h" />
+            <Header RelativePath=".\inc\Def.h" />
+            <Header RelativePath=".\inc\LCD.h" />
+            <Header RelativePath=".\inc\Nand.h" />
+            <Header RelativePath=".\inc\Rtc.h" />
+            <Header RelativePath=".\inc\communication.h" />
+            <Header RelativePath=".\inc\def.h" />
+            <Header RelativePath=".\inc\download.h" />
+            <Header RelativePath=".\inc\encrypt.h" />
+            <Header RelativePath=".\inc\function.h" />
+            <Header RelativePath=".\inc\jiema.h" />
+            <Header RelativePath=".\inc\mmu.h" />
+            <Header RelativePath=".\inc\option.h" />
+            <Header RelativePath=".\inc\systemconf.h" />
+            <Header RelativePath=".\inc\systemmenu.h" />
+            <Header RelativePath=".\inc\test.h" />
+            <Header RelativePath=".\inc\usbdev.h" />
+        </File>
+        <File RelativePath=".\SRC\mmu.c" FileType="1" Output="mmu.o">
+            <ADS_CParam Name="ADS_CfgFlag" ver64m_bin=" -cpu ARM926EJ-S -D__TARGET_ARCH_5TE -D__TARGET_FEATURE_DSPMUL -DSDRAM_SIZE64M -D__TARGET_CPU_ARM7TDMI= -D__TARGET_CPU_ARM926EJ_S -D__OPTIMISE_LEVEL==0 -D__TARGET_FEATURE_DOUBLEWORD -D__TARGET_ARCH_4T=  -g+ -O0" ver64m_bin_tool="2" ver64m_hex=" -cpu ARM920T -DSDRAM_SIZE64M -D__TARGET_CPU_ARM7TDMI= -D__TARGET_CPU_ARM920T  -g+ -O2" ver64m_hex_tool="2" />
+            <Header RelativePath=".\inc\2416addr.h" />
+            <Header RelativePath=".\inc\2416lib.h" />
+            <Header RelativePath=".\inc\2416slib.h" />
+            <Header RelativePath=".\inc\Def.h" />
+            <Header RelativePath=".\inc\def.h" />
+            <Header RelativePath=".\inc\mmu.h" />
+            <Header RelativePath=".\inc\option.h" />
+        </File>
+        <File RelativePath=".\SRC\nand.c" FileType="1" Output="nand.o">
+            <ADS_CParam Name="ADS_CfgFlag" ver64m_bin=" -cpu ARM926EJ-S -D__TARGET_ARCH_5TE -D__TARGET_FEATURE_DSPMUL -DSDRAM_SIZE64M -D__TARGET_CPU_ARM7TDMI= -D__TARGET_CPU_ARM926EJ_S -D__OPTIMISE_LEVEL==0 -D__TARGET_FEATURE_DOUBLEWORD -D__TARGET_ARCH_4T=  -g+ -O0" ver64m_bin_tool="2" ver64m_hex=" -cpu ARM920T -DSDRAM_SIZE64M -D__TARGET_CPU_ARM7TDMI= -D__TARGET_CPU_ARM920T  -g+ -O2" ver64m_hex_tool="2" />
+            <Header RelativePath=".\inc\2416addr.h" />
+            <Header RelativePath=".\inc\2416lib.h" />
+            <Header RelativePath=".\inc\2416slib.h" />
+            <Header RelativePath=".\inc\Def.h" />
+            <Header RelativePath=".\inc\Nand.h" />
+            <Header RelativePath=".\inc\def.h" />
+            <Header RelativePath=".\inc\option.h" />
+        </File>
+        <File RelativePath=".\SRC\start.s" FileType="2" Output="start.o">
+            <ADS_AsmParam Name="ADS_CfgFlag" ver64m_bin=' -cpu ARM926EJ-S -fpu None -keep -g -PD &quot;SDRAM_COL_BIT SETA 1&quot; -PD &quot;SDRAM_END SETA 0x34000000&quot;' ver64m_bin_tool="1" ver64m_hex=' -cpu ARM920T -fpu None -g -keep -PD &quot;SDRAM_END SETA 0x34000000&quot;' ver64m_hex_tool="1" />
+        </File>
+        <File RelativePath=".\SRC\zk.c" FileType="1" Output="zk.o">
+            <ADS_CParam Name="ADS_CfgFlag" ver64m_bin=" -cpu ARM926EJ-S -D__TARGET_ARCH_5TE -D__TARGET_FEATURE_DSPMUL -DSDRAM_SIZE64M -D__TARGET_CPU_ARM7TDMI= -D__TARGET_CPU_ARM926EJ_S -D__OPTIMISE_LEVEL==0 -D__TARGET_FEATURE_DOUBLEWORD -D__TARGET_ARCH_4T=  -g+ -O0" ver64m_bin_tool="2" ver64m_hex=" -cpu ARM920T -DSDRAM_SIZE64M -D__TARGET_CPU_ARM7TDMI= -D__TARGET_CPU_ARM920T  -g+ -O2" ver64m_hex_tool="2" />
+            <Header RelativePath=".\inc\def.h" />
+        </File>
+        <File RelativePath=".\SRC\systemconf.c" FileType="1" Output="systemconf.o">
+            <ADS_CParam Name="ADS_CfgFlag" ver64m_bin=" -cpu ARM926EJ-S -D__TARGET_ARCH_5TE -D__TARGET_FEATURE_DSPMUL -DSDRAM_SIZE64M -D__TARGET_CPU_ARM7TDMI= -D__TARGET_CPU_ARM926EJ_S -D__OPTIMISE_LEVEL==0 -D__TARGET_FEATURE_DOUBLEWORD -D__TARGET_ARCH_4T=  -g+ -O0" ver64m_bin_tool="2" ver64m_hex=" -cpu ARM920T -DSDRAM_SIZE64M -D__TARGET_CPU_ARM7TDMI= -D__TARGET_CPU_ARM920T  -g+ -O2" ver64m_hex_tool="2" />
+            <Header RelativePath=".\inc\2416addr.h" />
+            <Header RelativePath=".\inc\2416lib.h" />
+            <Header RelativePath=".\inc\Def.h" />
+            <Header RelativePath=".\inc\def.h" />
+            <Header RelativePath=".\inc\nand.h" />
+            <Header RelativePath=".\inc\option.h" />
+            <Header RelativePath=".\inc\systemconf.h" />
+        </File>
+        <File RelativePath=".\SRC\systemmenu.c" FileType="1" Output="systemmenu.o">
+            <ADS_CParam Name="ADS_CfgFlag" ver64m_bin=" -cpu ARM926EJ-S -D__TARGET_ARCH_5TE -D__TARGET_FEATURE_DSPMUL -DSDRAM_SIZE64M -D__TARGET_CPU_ARM7TDMI= -D__TARGET_CPU_ARM926EJ_S -D__OPTIMISE_LEVEL==0 -D__TARGET_FEATURE_DOUBLEWORD -D__TARGET_ARCH_4T=  -g+ -O0" ver64m_bin_tool="2" ver64m_hex=" -cpu ARM920T -DSDRAM_SIZE64M -D__TARGET_CPU_ARM7TDMI= -D__TARGET_CPU_ARM920T  -g+ -O2" ver64m_hex_tool="2" />
+            <Header RelativePath=".\inc\2416addr.h" />
+            <Header RelativePath=".\inc\2416lib.h" />
+            <Header RelativePath=".\inc\Def.h" />
+            <Header RelativePath=".\inc\Function.h" />
+            <Header RelativePath=".\inc\LCD.h" />
+            <Header RelativePath=".\inc\bmp.h" />
+            <Header RelativePath=".\inc\def.h" />
+            <Header RelativePath=".\inc\download.h" />
+            <Header RelativePath=".\inc\jiema.h" />
+            <Header RelativePath=".\inc\nand.h" />
+            <Header RelativePath=".\inc\option.h" />
+            <Header RelativePath=".\inc\systemconf.h" />
+            <Header RelativePath=".\inc\systemmenu.h" />
+        </File>
+        <File RelativePath=".\SRC\communication.c" FileType="1" Output="communication.o">
+            <ADS_CParam Name="ADS_CfgFlag" ver64m_bin=" -cpu ARM926EJ-S -D__TARGET_ARCH_5TE -D__TARGET_FEATURE_DSPMUL -DSDRAM_SIZE64M -D__TARGET_CPU_ARM7TDMI= -D__TARGET_CPU_ARM926EJ_S -D__OPTIMISE_LEVEL==0 -D__TARGET_FEATURE_DOUBLEWORD -D__TARGET_ARCH_4T=  -g+ -O0" ver64m_bin_tool="2" ver64m_hex=" -cpu ARM920T -DSDRAM_SIZE64M -D__TARGET_CPU_ARM7TDMI= -D__TARGET_CPU_ARM920T  -g+ -O2" ver64m_hex_tool="2" />
+            <Header RelativePath=".\inc\2416addr.h" />
+            <Header RelativePath=".\inc\2416lib.h" />
+            <Header RelativePath=".\inc\Def.h" />
+            <Header RelativePath=".\inc\communication.h" />
+            <Header RelativePath=".\inc\def.h" />
+            <Header RelativePath=".\inc\option.h" />
+            <Header RelativePath=".\inc\systemconf.h" />
+        </File>
+        <File RelativePath=".\SRC\bmp.c" FileType="1" Output="bmp.o">
+            <ADS_CParam Name="ADS_CfgFlag" ver64m_bin=" -cpu ARM926EJ-S -D__TARGET_ARCH_5TE -D__TARGET_FEATURE_DSPMUL -DSDRAM_SIZE64M -D__TARGET_CPU_ARM7TDMI= -D__TARGET_CPU_ARM926EJ_S -D__OPTIMISE_LEVEL==0 -D__TARGET_FEATURE_DOUBLEWORD -D__TARGET_ARCH_4T=  -g+ -O0" ver64m_bin_tool="2" ver64m_hex=" -cpu ARM920T -DSDRAM_SIZE64M -D__TARGET_CPU_ARM7TDMI= -D__TARGET_CPU_ARM920T  -g+ -O2" ver64m_hex_tool="2" />
+            <Header RelativePath=".\inc\2416addr.h" />
+            <Header RelativePath=".\inc\2416lib.h" />
+            <Header RelativePath=".\inc\Def.h" />
+            <Header RelativePath=".\inc\def.h" />
+            <Header RelativePath=".\inc\lcd.h" />
+            <Header RelativePath=".\inc\nand.h" />
+            <Header RelativePath=".\inc\option.h" />
+            <Header RelativePath=".\inc\systemconf.h" />
+        </File>
+        <File RelativePath=".\SRC\test.c" FileType="1" Output="test.o">
+            <ADS_CParam Name="ADS_CfgFlag" ver64m_bin=" -cpu ARM926EJ-S -D__TARGET_ARCH_5TE -D__TARGET_FEATURE_DSPMUL -DSDRAM_SIZE64M -D__TARGET_CPU_ARM7TDMI= -D__TARGET_CPU_ARM926EJ_S -D__OPTIMISE_LEVEL==0 -D__TARGET_FEATURE_DOUBLEWORD -D__TARGET_ARCH_4T=  -g+ -O0" ver64m_bin_tool="2" ver64m_hex=" -cpu ARM920T -DSDRAM_SIZE64M -D__TARGET_CPU_ARM7TDMI= -D__TARGET_CPU_ARM920T  -g+ -O2" ver64m_hex_tool="2" />
+            <Header RelativePath=".\inc\2416addr.h" />
+            <Header RelativePath=".\inc\2416lib.h" />
+            <Header RelativePath=".\inc\Def.h" />
+            <Header RelativePath=".\inc\def.h" />
+            <Header RelativePath=".\inc\lcd.h" />
+            <Header RelativePath=".\inc\nand.h" />
+            <Header RelativePath=".\inc\option.h" />
+            <Header RelativePath=".\inc\systemconf.h" />
+            <Header RelativePath=".\inc\test.h" />
+        </File>
+        <File RelativePath=".\SRC\rtc.c" FileType="1" Output="rtc.o">
+            <ADS_CParam Name="ADS_CfgFlag" ver64m_bin=" -cpu ARM926EJ-S -D__TARGET_ARCH_5TE -D__TARGET_FEATURE_DSPMUL -DSDRAM_SIZE64M -D__TARGET_CPU_ARM7TDMI= -D__TARGET_CPU_ARM926EJ_S -D__OPTIMISE_LEVEL==0 -D__TARGET_FEATURE_DOUBLEWORD -D__TARGET_ARCH_4T=  -g+ -O0" ver64m_bin_tool="2" ver64m_hex=" -cpu ARM920T -DSDRAM_SIZE64M -D__TARGET_CPU_ARM7TDMI= -D__TARGET_CPU_ARM920T  -g+ -O2" ver64m_hex_tool="2" />
+            <Header RelativePath=".\inc\2416addr.h" />
+            <Header RelativePath=".\inc\2416lib.h" />
+            <Header RelativePath=".\inc\Def.h" />
+            <Header RelativePath=".\inc\Rtc.h" />
+            <Header RelativePath=".\inc\def.h" />
+            <Header RelativePath=".\inc\option.h" />
+            <Header RelativePath=".\inc\systemconf.h" />
+        </File>
+        <File RelativePath=".\SRC\encrypt.c" FileType="1" Output="encrypt.o">
+            <ADS_CParam Name="ADS_CfgFlag" ver64m_bin=" -cpu ARM926EJ-S -D__TARGET_ARCH_5TE -D__TARGET_FEATURE_DSPMUL -DSDRAM_SIZE64M -D__TARGET_CPU_ARM7TDMI= -D__TARGET_CPU_ARM926EJ_S -D__OPTIMISE_LEVEL==0 -D__TARGET_FEATURE_DOUBLEWORD -D__TARGET_ARCH_4T=  -g+ -O0" ver64m_bin_tool="2" ver64m_hex=" -cpu ARM920T -DSDRAM_SIZE64M -D__TARGET_CPU_ARM7TDMI= -D__TARGET_CPU_ARM920T  -g+ -O2" ver64m_hex_tool="2" />
+            <Header RelativePath=".\inc\2416addr.h" />
+            <Header RelativePath=".\inc\2416lib.h" />
+            <Header RelativePath=".\inc\Def.h" />
+            <Header RelativePath=".\inc\Rtc.h" />
+            <Header RelativePath=".\inc\communication.h" />
+            <Header RelativePath=".\inc\def.h" />
+            <Header RelativePath=".\inc\encrypt.h" />
+            <Header RelativePath=".\inc\lcd.h" />
+            <Header RelativePath=".\inc\nand.h" />
+            <Header RelativePath=".\inc\option.h" />
+            <Header RelativePath=".\inc\systemconf.h" />
+        </File>
+        <File RelativePath=".\SRC\app.c" FileType="1" Output="app.o">
+            <ADS_CParam Name="ADS_CfgFlag" ver64m_bin=" -cpu ARM926EJ-S -D__TARGET_ARCH_5TE -D__TARGET_FEATURE_DSPMUL -DSDRAM_SIZE64M -D__TARGET_CPU_ARM7TDMI= -D__TARGET_CPU_ARM926EJ_S -D__OPTIMISE_LEVEL==0 -D__TARGET_FEATURE_DOUBLEWORD -D__TARGET_ARCH_4T=  -g+ -O0" ver64m_bin_tool="2" ver64m_hex=" -cpu ARM920T -DSDRAM_SIZE64M -D__TARGET_CPU_ARM7TDMI= -D__TARGET_CPU_ARM920T  -g+ -O2" ver64m_hex_tool="2" />
+            <Header RelativePath=".\inc\2416addr.h" />
+            <Header RelativePath=".\inc\2416lib.h" />
+            <Header RelativePath=".\inc\Def.h" />
+            <Header RelativePath=".\inc\LCD.h" />
+            <Header RelativePath=".\inc\Nand.h" />
+            <Header RelativePath=".\inc\Rtc.h" />
+            <Header RelativePath=".\inc\app.h" />
+            <Header RelativePath=".\inc\appBase.h" />
+            <Header RelativePath=".\inc\communication.h" />
+            <Header RelativePath=".\inc\def.h" />
+            <Header RelativePath=".\inc\download.h" />
+            <Header RelativePath=".\inc\encrypt.h" />
+            <Header RelativePath=".\inc\function.h" />
+            <Header RelativePath=".\inc\jiema.h" />
+            <Header RelativePath=".\inc\mmu.h" />
+            <Header RelativePath=".\inc\option.h" />
+            <Header RelativePath=".\inc\systemconf.h" />
+            <Header RelativePath=".\inc\systemmenu.h" />
+            <Header RelativePath=".\inc\test.h" />
+        </File>
+        <File RelativePath=".\inc\app.h" FileType="4" />
+        <File RelativePath=".\SRC\appBase.c" FileType="1" Output="appBase.o">
+            <ADS_CParam Name="ADS_CfgFlag" ver64m_bin=" -cpu ARM926EJ-S -D__TARGET_ARCH_5TE -D__TARGET_FEATURE_DSPMUL -DSDRAM_SIZE64M -D__TARGET_CPU_ARM7TDMI= -D__TARGET_CPU_ARM926EJ_S -D__OPTIMISE_LEVEL==0 -D__TARGET_FEATURE_DOUBLEWORD -D__TARGET_ARCH_4T=  -g+ -O0" ver64m_bin_tool="2" ver64m_hex=" -cpu ARM920T -DSDRAM_SIZE64M -D__TARGET_CPU_ARM7TDMI= -D__TARGET_CPU_ARM920T  -g+ -O2" ver64m_hex_tool="2" />
+            <Header RelativePath=".\inc\2416addr.h" />
+            <Header RelativePath=".\inc\2416lib.h" />
+            <Header RelativePath=".\inc\Def.h" />
+            <Header RelativePath=".\inc\LCD.h" />
+            <Header RelativePath=".\inc\Nand.h" />
+            <Header RelativePath=".\inc\Rtc.h" />
+            <Header RelativePath=".\inc\appBase.h" />
+            <Header RelativePath=".\inc\communication.h" />
+            <Header RelativePath=".\inc\def.h" />
+            <Header RelativePath=".\inc\download.h" />
+            <Header RelativePath=".\inc\encrypt.h" />
+            <Header RelativePath=".\inc\function.h" />
+            <Header RelativePath=".\inc\jiema.h" />
+            <Header RelativePath=".\inc\mmu.h" />
+            <Header RelativePath=".\inc\option.h" />
+            <Header RelativePath=".\inc\systemconf.h" />
+            <Header RelativePath=".\inc\systemmenu.h" />
+            <Header RelativePath=".\inc\test.h" />
+        </File>
+        <File RelativePath=".\inc\appBase.h" FileType="4" />
+        <File RelativePath=".\SRC\usbdev.c" FileType="1" Output="usbdev.o">
+            <ADS_CParam Name="ADS_CfgFlag" ver64m_bin=" -cpu ARM926EJ-S -D__TARGET_ARCH_5TE -D__TARGET_FEATURE_DSPMUL -DSDRAM_SIZE64M -D__TARGET_CPU_ARM7TDMI= -D__TARGET_CPU_ARM926EJ_S -D__OPTIMISE_LEVEL==0 -D__TARGET_FEATURE_DOUBLEWORD -D__TARGET_ARCH_4T=  -g+ -O0" ver64m_bin_tool="2" ver64m_hex=" -cpu ARM920T -DSDRAM_SIZE64M -D__TARGET_CPU_ARM7TDMI= -D__TARGET_CPU_ARM920T  -g+ -O2" ver64m_hex_tool="2" />
+            <Header RelativePath=".\inc\2416addr.h" />
+            <Header RelativePath=".\inc\2416lib.h" />
+            <Header RelativePath=".\inc\Def.h" />
+            <Header RelativePath=".\inc\LCD.h" />
+            <Header RelativePath=".\inc\Nand.h" />
+            <Header RelativePath=".\inc\communication.h" />
+            <Header RelativePath=".\inc\def.h" />
+            <Header RelativePath=".\inc\download.h" />
+            <Header RelativePath=".\inc\option.h" />
+            <Header RelativePath=".\inc\systemmenu.h" />
+            <Header RelativePath=".\inc\usbdev.h" />
+        </File>
+        <File RelativePath=".\inc\usbdev.h" FileType="4" />
+        <File RelativePath=".\SRC\yuanzhiji.c" FileType="1" Output="yuanzhiji.o">
+            <ADS_CParam Name="ADS_CfgFlag" ver64m_bin=" -cpu ARM926EJ-S -D__TARGET_ARCH_5TE -D__TARGET_FEATURE_DSPMUL -DSDRAM_SIZE64M -D__TARGET_CPU_ARM7TDMI= -D__TARGET_CPU_ARM926EJ_S -D__OPTIMISE_LEVEL==0 -D__TARGET_FEATURE_DOUBLEWORD -D__TARGET_ARCH_4T=  -g+ -O0" ver64m_bin_tool="2" ver64m_hex=" -cpu ARM920T -DSDRAM_SIZE64M -D__TARGET_CPU_ARM7TDMI= -D__TARGET_CPU_ARM920T  -g+ -O2" ver64m_hex_tool="2" />
+            <Header RelativePath=".\inc\2416addr.h" />
+            <Header RelativePath=".\inc\2416lib.h" />
+            <Header RelativePath=".\inc\Def.h" />
+            <Header RelativePath=".\inc\communication.h" />
+            <Header RelativePath=".\inc\def.h" />
+            <Header RelativePath=".\inc\download.h" />
+            <Header RelativePath=".\inc\lcd.h" />
+            <Header RelativePath=".\inc\option.h" />
+            <Header RelativePath=".\inc\systemconf.h" />
+            <Header RelativePath=".\inc\yuanzhiji.h" />
+        </File>
+        <File RelativePath=".\inc\yuanzhiji.h" FileType="4" />
+    </Files>
+</TKStudioProject>
